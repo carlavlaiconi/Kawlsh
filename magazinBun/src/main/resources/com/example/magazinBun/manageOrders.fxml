@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.magazinBun.ManageOrdersController">
+    <children>
+        <ImageView fx:id="saveButton" fitHeight="500.0" fitWidth="600.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../../MakeupPhotos/makeup-gbf4ee637b_1920.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="17.0" layoutY="78.0" prefHeight="368.0" prefWidth="566.0" style="-fx-background-color: #000;">
+            <children>
+                <Label fx:id="welcomeLabelA" alignment="TOP_CENTER" layoutX="8.0" layoutY="23.0" prefHeight="38.0" prefWidth="203.0" text="Manage Orders" textFill="WHITE">
+                    <font>
+                        <Font name="Verdana" size="18.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="OrdersTable" layoutX="8.0" layoutY="64.0" prefHeight="290.0" prefWidth="550.0">
+                    <columns>
+                        <TableColumn prefWidth="62.0" text="Id_Comnd">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="id_command" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="49.33331298828125" text="Id User">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="id_user" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="201.33331298828125" text="Address">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="address" />
+                            </cellValueFactory>
+                        </TableColumn>
+                  <TableColumn prefWidth="95.33331298828125" text="Product List" >
+                        <cellValueFactory>
+                            <PropertyValueFactory property="productList" />
+                        </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="69.3333740234375" text="Comfirmed" >
+                        <cellValueFactory>
+                            <PropertyValueFactory property="confirmed" />
+                        </cellValueFactory>
+                  </TableColumn>
+                    </columns>
+                </TableView>
+                <TextField fx:id="search" layoutX="349.0" layoutY="23.0" prefHeight="25.0" prefWidth="203.0" promptText="Search" style="-fx-background-radius: 20px;" />
+                <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="521.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../icons/bottom_bar/icons8-search-100.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Label fx:id="logoA" layoutX="14.0" prefHeight="65.0" prefWidth="303.0" text="Kawlsh" textFill="#444444">
+            <font>
+                <Font name="ROGFonts-Regular" size="44.0" />
+            </font>
+        </Label>
+        <Button fx:id="mainButtonA" layoutX="545.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToShopMenu" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 50px; -fx-background-color: #444444;" />
+    </children>
+</Pane>

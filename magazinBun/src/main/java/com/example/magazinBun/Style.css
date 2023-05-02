@@ -1,0 +1,16 @@
+.button{
+    -fx-background-color : transparent
+}
+
+.button: hover{
+    -fx-effect: lighting(white, 45, 0.5, 0, 0);
+}
+
+.button{
+    -fx-background-color : transparent
+}
+
+.scroll-bar:vertical thumb {
+    -fx-background-color: blue;
+}
+

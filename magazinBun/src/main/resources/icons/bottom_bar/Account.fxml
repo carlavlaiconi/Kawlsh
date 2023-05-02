@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../MakeupPhotos/makeup-gbf4ee637b_1920.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="105.0" layoutY="115.0" prefHeight="283.0" prefWidth="400.0" style="-fx-background-color: #000;">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="92.0" layoutX="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@outline_account_circle_white_48dp.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="125.0" layoutY="79.0" prefHeight="38.0" prefWidth="152.0" text="Welcome, User!" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

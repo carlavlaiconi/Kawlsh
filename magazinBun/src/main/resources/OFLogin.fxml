@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <AnchorPane prefHeight="600.0" prefWidth="612.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="91.0" layoutY="109.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #000;">
+               <children>
+                  <Label layoutX="159.0" layoutY="14.0" text="Sign in" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="101.0" text="Username" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="108.0" layoutY="98.0" prefHeight="27.0" prefWidth="252.0" />
+                  <PasswordField layoutX="108.0" layoutY="152.0" prefHeight="25.0" prefWidth="254.0" />
+                  <Label layoutX="23.0" layoutY="154.0" text="Password" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="215.0" layoutY="219.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #FFF;" text="Register">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="54.0" layoutY="219.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #FFF;" text="Log in" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

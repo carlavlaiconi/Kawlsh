@@ -1,0 +1,10 @@
+.accountButtonSS{
+    -fx-background-color : transparent
+}
+
+.accountButtonSS:hover{
+   -fx-text-fill:#66bbc4;
+   -fx-effect:dropshadow(gaussian,yellow,50, 0, 0, 0);
+}
+
+

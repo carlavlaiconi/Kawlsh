@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.magazinBun.editPriceController">
+   <children>
+      <ImageView fx:id="saveButton" fitHeight="500.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../MakeupPhotos/makeup-gbf4ee637b_1920.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="99.0" layoutY="110.0" prefHeight="224.0" prefWidth="420.0" style="-fx-background-color: #000;">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="92.0" layoutX="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons/bottom%20bar/outline_account_circle_white_48dp.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="welcomeLabelA" alignment="TOP_CENTER" layoutX="-2.0" layoutY="14.0" prefHeight="38.0" prefWidth="424.0" text="Change Price" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="price" layoutX="136.0" layoutY="95.0" prefHeight="28.0" prefWidth="151.0" promptText="Price" style="-fx-background-color: transparent; -fx-border-color: #333; -fx-border-radius: 3px;" />
+            <Button fx:id="save" layoutX="139.0" layoutY="177.0" mnemonicParsing="false" onAction="#saveClick" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #fff;" text="Save">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label fx:id="logoA" layoutX="14.0" prefHeight="65.0" prefWidth="303.0" text="Kawlsh" textFill="#444444">
+         <font>
+            <Font name="ROGFonts-Regular" size="44.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

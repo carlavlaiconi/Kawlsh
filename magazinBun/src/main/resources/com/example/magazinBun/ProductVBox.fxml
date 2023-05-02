@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="174.0" style="-fx-background-color: #e8e8e8; -fx-background-radius: 5px; -fx-border-color: #000; -fx-border-width: 0.1px; -fx-border-radius: 5px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.magazinBun.ProductVBoxController">
+   <children>
+      <Pane fx:id="productVBXpane" prefHeight="137.0" prefWidth="179.0">
+         <VBox.margin>
+            <Insets left="10.0" top="3.0" />
+         </VBox.margin>
+         <children>
+            <ImageView fx:id="imageProductVBox" fitHeight="138.0" fitWidth="138.0" layoutX="9.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../products/lipsticks/dior.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="labelBrandVBox" prefHeight="31.0" prefWidth="164.0" text="the brand of the&#10;product">
+         <font>
+            <Font name="Verdana Bold" size="13.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets left="3.0" />
+         </padding>
+      </Label>
+      <Label fx:id="labelNameVBox" prefHeight="31.0" prefWidth="157.0" text="the name of the &#10;product">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets left="3.0" />
+         </padding>
+      </Label>
+      <HBox prefHeight="37.0" prefWidth="140.0">
+         <children>
+            <Button fx:id="favsButtonVBox" mnemonicParsing="false" onAction="#AddToFav" prefHeight="39.0" prefWidth="39.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/bottom_bar/noun-heart-5402499.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="cartButtonVBox" mnemonicParsing="false" onAction="#AddToCart" prefHeight="39.0" prefWidth="39.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icons/bottom_bar/noun-cart-1560289.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+            <Label fx:id="labelPriceVBox" alignment="CENTER" prefHeight="39.0" prefWidth="63.0" text="000 lei" textAlignment="CENTER">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>
